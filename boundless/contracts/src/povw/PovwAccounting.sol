@@ -66,7 +66,6 @@ contract PovwAccounting is IPovwAccounting, Initializable, EIP712Upgradeable, Ow
 
     function initialize(address initialOwner) external initializer {
         __Ownable_init(initialOwner);
-        __UUPSUpgradeable_init();
         __EIP712_init("PovwAccounting", "1");
 
         _pendingEpoch = PendingEpochStorage({number: TOKEN.getCurrentEpoch().toUint64(), totalWork: 0});
