@@ -1,0 +1,71 @@
+[package]
+version = "0.1.0"
+name = "sp1-driver"
+edition = "2021"
+
+[[bench]]
+name = "benchmark"
+path = "src/benchmark.rs"
+required-features = ["enable"]
+harness = true
+
+[[bin]]
+name = "sp1-verifier"
+path = "src/verifier.rs"
+required-features = ["enable-verifier"]
+
+
+[dependencies]
+raiko-lib = { workspace = true, optional = true }
+alloy-contract = { workspace = true, optional = true }
+alloy-primitives = { workspace = true, optional = true }
+alloy-provider = { workspace = true, optional = true }
+alloy-sol-types = { workspace = true, optional = true }
+alloy-eips = { workspace = true, optional = true }
+serde = { workspace = true, optional = true }
+serde_json = { workspace = true, optional = true }
+sp1-sdk = { workspace = true, optional = true }
+sp1-prover = { workspace = true, optional = true }
+sp1-primitives = { workspace = true, optional = true }
+anyhow = { workspace = true, optional = true }
+once_cell = { workspace = true, optional = true }
+sha3 = { workspace = true, optional = true, default-features = false }
+serde_with = { workspace = true, optional = true }
+dotenv = { workspace = true, optional = true }
+cfg-if = { workspace = true }
+bincode = { workspace = true }
+reth-primitives = { workspace = true }
+tokio = { workspace = true, optional = true }
+tracing = { workspace = true, optional = true }
+dashmap = { workspace = true }
+url = { workspace = true }
+
+[build-dependencies]
+sp1-helper = { workspace = true, optional = true }
+cargo_metadata = "0.18.1"
+chrono = { version = "0.4.34", default-features = false, features = ["clock"] }
+regex = "1.5.4"
+
+
+[features]
+enable = [
+    "serde",
+    "serde_json",
+    "raiko-lib",
+    "sp1-sdk",
+    "sp1-prover",
+    "sp1-primitives",
+    "anyhow",
+    "alloy-contract",
+    "alloy-primitives",
+    "alloy-provider",
+    "alloy-sol-types",
+    "once_cell",
+    "sha3",
+    "dotenv",
+    "serde_with",
+    "tokio",
+    "tracing",
+]
+foundry-verify = []
+enable-verifier = []

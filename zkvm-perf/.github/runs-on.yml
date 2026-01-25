@@ -1,0 +1,50 @@
+images:
+  nvidia-linux:
+    platform: "linux"
+    arch: "x64"
+    ami: "ami-0a63dc9cb9e934ba3"
+    owner: "421253708207"
+
+  dlami-x64:
+    platform: "linux"
+    arch: "x64"
+    owner: "898082745236"
+    name: "Deep Learning Base OSS Nvidia Driver GPU AMI (Ubuntu 22.04)*"
+
+runners:
+  aws-m7i-xlarge:
+    family: ["m7i.xlarge"]
+    image: ubuntu22-full-x64
+  aws-m7i-2xlarge:
+    family: ["m7i.2xlarge"]
+    image: ubuntu22-full-x64
+  aws-m7i-4xlarge:
+    family: ["m7i.4xlarge"]
+    image: ubuntu22-full-x64
+  aws-m7i-8xlarge:
+    family: ["m7i.8xlarge"]
+    image: ubuntu22-full-x64
+  aws-m7i-16xlarge:
+    family: ["m7i.16xlarge"]
+    image: ubuntu22-full-x64
+  aws-m7i-24xlarge:
+    family: ["m7i.24xlarge"]
+    image: ubuntu22-full-x64
+  aws-g6-xlarge:
+    family: ["g6.xlarge"]
+    image: dlami-x64
+  aws-g6-2xlarge:
+    family: ["g6.2xlarge"]
+    image: dlami-x64
+  aws-g6-4xlarge:
+    family: ["g6.4xlarge"]
+    image: dlami-x64
+  aws-g6-8xlarge:
+    family: ["g6.8xlarge"]
+    image: dlami-x64
+  aws-g6-12xlarge:
+    family: ["g6.12xlarge"]
+    image: dlami-x64
+  aws-g6-16xlarge:
+    family: ["g6.16xlarge"]
+    image: dlami-x64

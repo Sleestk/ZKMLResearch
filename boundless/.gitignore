@@ -1,0 +1,75 @@
+# Compiler files
+cache/
+
+# Ignore the market cache directory
+!crates/indexer/src/market/cache/
+**/cache_market_x2/
+*.db
+
+out/
+build-info-reference/
+**/node_modules/
+
+*dev*.yaml
+
+# Ignores development broadcast logs
+/broadcast
+/broadcast/*/31337/
+/broadcast/*/11155111/
+/broadcast/**/dry-run/
+
+# Ignore the file with RPC and Etherscan API keys for deployment.
+deployment_secrets.toml
+
+# Devnet logs
+/logs
+
+# Ignore all env files
+.env*
+# Except for the templates and running network env files
+!.env.broker-template
+!.env.localnet-template
+!.env.eth-sepolia
+!.env.base-sepolia
+!.env.base
+
+# Ignore broker config file(s)
+*broker*.toml
+
+# Cargo
+target/
+
+# Misc
+.DS_Store
+.idea
+.aider*
+.claude
+**/CLAUDE.md
+**/AGENTS.md
+.cursor
+.codex
+
+infra/**/build
+
+
+# Ignore generated files
+contracts/src/EchoImageID.sol
+contracts/src/ResolveImageID.sol
+contracts/src/SetBuilderImageID.sol
+contracts/src/libraries/AssessorImageID.sol
+contracts/src/libraries/PovwImageID.sol
+contracts/src/libraries/UtilImageID.sol
+contracts/test/AssessorElf.sol
+contracts/test/EchoElf.sol
+contracts/test/PovwElf.sol
+contracts/test/ResolveElf.sol
+contracts/test/SetBuilderElf.sol
+contracts/test/UtilElf.sol
+
+# Lints & Format Caches
+.lycheecache
+# Ignore sccache install location created in CI
+sccache-v0.*
+
+# Ignore generated docs
+/docs

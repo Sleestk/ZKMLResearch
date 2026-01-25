@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.cargo.features": ["risc0", "sp1", "cuda"],
+    "rust-analyzer.check.features": ["risc0", "sp1", "cuda"]
+}

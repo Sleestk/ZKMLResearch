@@ -1,0 +1,11 @@
+[package]
+name = "raiko-tasks"
+version = "0.1.0"
+authors = ["Taiko Labs"]
+edition = "2021"
+
+[dependencies]
+raiko-lib = { workspace = true }
+raiko-core = { workspace = true }
+serde = { workspace = true }
+utoipa = { workspace = true }

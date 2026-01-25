@@ -1,0 +1,18 @@
+[workspace]
+[package]
+name = "sha256-sp1"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sp1-zkvm = "4.0.0-rc.10"
+serde = { version = "1.0.204", default-features = false, features = ["derive"] }
+sha2 = { git = "https://github.com/sp1-patches/RustCrypto-hashes", package = "sha2", tag = "patch-sha2-0.10.8-sp1-4.0.0-rc.3" }
+
+[features]
+risc0 = []
+sp1 = []
+
+[patch]

@@ -1,0 +1,33 @@
+# Ignore everything
+*
+
+# Allow files and directories
+!/Cargo.lock
+!/Cargo.toml
+!/config.json
+!/docker/entrypoint.sh
+!/docker/enclave-key.pem
+!/docker/cargo-config.toml
+!/.env
+!/lib
+!/primitives
+!/provers
+!/host
+!/pipeline
+!/harness
+!/rust-toolchain
+!/taiko.toml
+!/tests
+!/kzg_settings_raw.bin
+!/core
+!/taskdb
+!/makefile
+!/script
+!/reqpool
+!/reqactor
+!/ballot
+!/redis-derive
+!/gaiko
+
+/provers/sp1/guest/target
+/provers/risc0/guest/target
