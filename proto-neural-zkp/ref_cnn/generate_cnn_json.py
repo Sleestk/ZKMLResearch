@@ -149,11 +149,16 @@ x = np.random.randint(low=-5, high=5, size=shape)
 
 initial = x.flatten().astype(np.float32, copy=False)
 
-data = {
+initial_data = {
     "v": 1,
     "dim": shape,
     "data": initial
     }
+
+# Write initial input to JSON file
+initial_json = json.dumps(initial_data, cls=Encoder)
+with open('../src/json/initial.json', "w") as f:
+    f.write(initial_json)
 
 # conv layer
 shape = (32,5,5,3)

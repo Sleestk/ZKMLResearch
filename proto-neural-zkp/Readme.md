@@ -38,6 +38,8 @@ python3 vanilla_cnn.py
 python3 generate_cnn_json.py
 cd ../
 # run Rust CNN implementation and compare results against your previous results
+cargo +nightly-2023-08-01 test serialize::tests::deserialize_nn_json -- --show-output
+# or
 cargo test serialize::tests::deserialize_nn_json -- --show-output  
 ```
 
