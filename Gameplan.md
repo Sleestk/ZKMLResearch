@@ -160,12 +160,24 @@ The internship involves building a **distributed analytics system** for detectio
 
 | Aspect | RISC Zero (zk-STARKs) | Plonky2 (proto-neural-zkp) |
 |--------|----------------------|---------------------------|
-| Proof system | | |
-| Programming model | | |
-| Proof size | | |
-| Verification time | | |
-| Setup requirements | | |
-| Best use cases | | |
+| Proof system | zk-STARK (Scalable Transparent Arguments) using FRI protocol | PLONK-based SNARK with Goldilocks field (64-bit) and Poseidon hash |
+| Programming model | General-purpose zkVM - write normal Rust code, compiles to RISC-V ELF | Circuit-specific - manually construct arithmetic gates for each operation |
+| Proof size | ~100KB+ (succinct STARK) or ~300 bytes (Groth16 compressed) | ~45KB (2-3x smaller than STARK) |
+| Verification time | ~50ms+ (STARK) or ~100-300K gas (Groth16 on-chain) | <100ms (typically 10-50ms), faster for fixed circuits |
+| Setup requirements | ✅ No trusted setup (transparent) - Groth16 path uses established ceremony | ✅ No trusted setup (transparent) - relies only on hash functions |
+| Best use cases | Arbitrary/evolving programs, detection algorithms that change frequently, general-purpose compute (Boundless), high developer velocity | Fixed ML inference (CNNs), stable architectures, IrisCode verification, optimized fraud detection with constant model structure |
+
+**Key Insight:** RISC Zero = flexibility (any RISC-V code works) vs Plonky2 = optimization (hand-tuned circuits for specific tasks)
+
+**Performance Notes:**
+- **Plonky2 Proof Generation:** 10-60s per CNN inference (proto-neural-zkp benchmarks)
+- **RISC Zero Scalability:** Recursive composition + Bonsai cloud proving
+- **TensorPlonk Optimization:** 1,000x speedup for matrix operations in ZKML
+- **Real-world:** Boundless uses RISC Zero for incentivized verifiable compute; Worldcoin uses Plonky2 for IrisCode verification
+
+**Trade-off Summary:**
+- Choose RISC Zero when detection logic evolves rapidly and you need maximum flexibility
+- Choose Plonky2 when computation is stable, proof size matters, and you can invest in circuit optimization
 
 **Resources:**
 - proto-neural-zkp README
