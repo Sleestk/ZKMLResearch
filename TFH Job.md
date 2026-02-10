@@ -70,7 +70,5 @@ Job-to-Repo Mapping
   ├────────────────────────┼────────────────────────────┼──────────┤                                                                                                             
   │ Zero knowledge ML      │ proto-neural-zkp/          │ CRITICAL │                                                                                                             
   ├────────────────────────┼────────────────────────────┼──────────┤                                                                                                             
-  │ Smart contracts        │ boundless/core-contracts/  │ HIGH     │                                                                                                             
-  ├────────────────────────┼────────────────────────────┼──────────┤                                                                                                             
-  │ Blockchain integration │ semaphore-airdrop-relayer/ │ LOW      │                                                                                                             
+  │ Smart contracts        │ boundless/core-contracts/  │ HIGH     │                                                                                                                                                         |                                                    
   └────────────────────────┴────────────────────────────┴──────────┘    
