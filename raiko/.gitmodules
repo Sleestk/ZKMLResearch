@@ -1,4 +1,0 @@
-[submodule "gaiko"]
-	path = gaiko
-	url = https://github.com/taikoxyz/gaiko
-	branch = feat/shasta
