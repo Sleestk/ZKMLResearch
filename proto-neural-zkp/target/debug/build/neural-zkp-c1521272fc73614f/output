@@ -1,4 +1,4 @@
-cargo:rustc-env=COMMIT_SHA=464a1a17441b1181f0944da689f610adb3edb848
-cargo:rustc-env=COMMIT_DATE=2026-02-10
-cargo:rustc-env=BUILD_DATE=2026-02-13
+cargo:rustc-env=COMMIT_SHA=64d003dba2571ada60cb9be00fff597eae79ba92
+cargo:rustc-env=COMMIT_DATE=2026-02-13
+cargo:rustc-env=BUILD_DATE=2026-02-16
 cargo:rustc-env=TARGET=aarch64-apple-darwin

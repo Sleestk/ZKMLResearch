@@ -2,8 +2,8 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-   3.289002541s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="neural_zkp"}: cargo::core::compiler::fingerprint: fingerprint error for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("neural_zkp", ["lib"], "/Users/ble/ZKMLResearch/proto-neural-zkp/src/lib.rs", Edition2021) }
-   3.289355375s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="neural_zkp"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/neural-zkp-e45a039fc7942592/lib-neural_zkp`
+   3.167745125s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="neural_zkp"}: cargo::core::compiler::fingerprint: fingerprint error for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("neural_zkp", ["lib"], "/Users/ble/ZKMLResearch/proto-neural-zkp/src/lib.rs", Edition2021) }
+   3.167766167s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="neural_zkp"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/neural-zkp-e45a039fc7942592/lib-neural_zkp`
 
 Caused by:
     No such file or directory (os error 2)
@@ -26,10 +26,10 @@ Stack backtrace:
   14: std::rt::lang_start::<()>::{closure#0}
   15: std::rt::lang_start_internal
   16: _main
-   3.323795708s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/ble/ZKMLResearch/proto-neural-zkp/build.rs", Edition2021) }
-   3.323805333s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: PrecalculatedComponentsChanged { old: "1770846209.133910070s (target/flycheck1/stdout)", new: "1770947139.227246893s (target/flycheck1/stderr)" }
-   3.325651583s  INFO prepare_target{force=false package_id=plonky2 v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c) target="plonky2"}: cargo::core::compiler::fingerprint: fingerprint error for plonky2 v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("plonky2", ["lib"], "/Users/ble/.cargo/git/checkouts/plonky2-dec9922fb31f92e2/b34ace4/plonky2/src/lib.rs", Edition2021) }
-   3.325672208s  INFO prepare_target{force=false package_id=plonky2 v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c) target="plonky2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/plonky2-4ceced7695c0e2e8/lib-plonky2`
+   3.193960500s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/ble/ZKMLResearch/proto-neural-zkp/build.rs", Edition2021) }
+   3.193996500s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: PrecalculatedComponentsChanged { old: "1771271782.484822213s (target/flycheck1/stderr)", new: "1771271792.662705740s (target/flycheck1/stderr)" }
+   3.195560917s  INFO prepare_target{force=false package_id=plonky2 v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c) target="plonky2"}: cargo::core::compiler::fingerprint: fingerprint error for plonky2 v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("plonky2", ["lib"], "/Users/ble/.cargo/git/checkouts/plonky2-dec9922fb31f92e2/b34ace4/plonky2/src/lib.rs", Edition2021) }
+   3.195568250s  INFO prepare_target{force=false package_id=plonky2 v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c) target="plonky2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/plonky2-4ceced7695c0e2e8/lib-plonky2`
 
 Caused by:
     No such file or directory (os error 2)
@@ -53,8 +53,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   3.334178125s  INFO prepare_target{force=false package_id=plonky2_field v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c) target="plonky2_field"}: cargo::core::compiler::fingerprint: fingerprint error for plonky2_field v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("plonky2_field", ["lib"], "/Users/ble/.cargo/git/checkouts/plonky2-dec9922fb31f92e2/b34ace4/field/src/lib.rs", Edition2021) }
-   3.334189958s  INFO prepare_target{force=false package_id=plonky2_field v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c) target="plonky2_field"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/plonky2_field-4dce4707cf955463/lib-plonky2_field`
+   3.202212375s  INFO prepare_target{force=false package_id=plonky2_field v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c) target="plonky2_field"}: cargo::core::compiler::fingerprint: fingerprint error for plonky2_field v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("plonky2_field", ["lib"], "/Users/ble/.cargo/git/checkouts/plonky2-dec9922fb31f92e2/b34ace4/field/src/lib.rs", Edition2021) }
+   3.202224125s  INFO prepare_target{force=false package_id=plonky2_field v0.1.0 (https://github.com/mir-protocol/plonky2?branch=main#b34ace4c) target="plonky2_field"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/plonky2_field-4dce4707cf955463/lib-plonky2_field`
 
 Caused by:
     No such file or directory (os error 2)
@@ -79,8 +79,8 @@ Stack backtrace:
   16: std::rt::lang_start::<()>::{closure#0}
   17: std::rt::lang_start_internal
   18: _main
-   3.341326541s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="neural_zkp"}: cargo::core::compiler::fingerprint: fingerprint error for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("neural_zkp", ["lib"], "/Users/ble/ZKMLResearch/proto-neural-zkp/src/lib.rs", Edition2021) }
-   3.341341333s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="neural_zkp"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/neural-zkp-b96c247070fe33a1/test-lib-neural_zkp`
+   3.209861167s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="neural_zkp"}: cargo::core::compiler::fingerprint: fingerprint error for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("neural_zkp", ["lib"], "/Users/ble/ZKMLResearch/proto-neural-zkp/src/lib.rs", Edition2021) }
+   3.209872459s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="neural_zkp"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/neural-zkp-b96c247070fe33a1/test-lib-neural_zkp`
 
 Caused by:
     No such file or directory (os error 2)
@@ -103,8 +103,8 @@ Stack backtrace:
   14: std::rt::lang_start::<()>::{closure#0}
   15: std::rt::lang_start_internal
   16: _main
-   3.343670875s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="rust-app"}: cargo::core::compiler::fingerprint: fingerprint error for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/Check { test: false }/TargetInner { name: "rust-app", doc: true, ..: with_path("/Users/ble/ZKMLResearch/proto-neural-zkp/src/cli/main.rs", Edition2021) }
-   3.343678333s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="rust-app"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/neural-zkp-7c3d71f0f0809332/bin-rust-app`
+   3.212538917s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="rust-app"}: cargo::core::compiler::fingerprint: fingerprint error for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/Check { test: false }/TargetInner { name: "rust-app", doc: true, ..: with_path("/Users/ble/ZKMLResearch/proto-neural-zkp/src/cli/main.rs", Edition2021) }
+   3.212545167s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="rust-app"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/neural-zkp-7c3d71f0f0809332/bin-rust-app`
 
 Caused by:
     No such file or directory (os error 2)
@@ -127,8 +127,8 @@ Stack backtrace:
   14: std::rt::lang_start::<()>::{closure#0}
   15: std::rt::lang_start_internal
   16: _main
-   3.344394208s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="rust-app"}: cargo::core::compiler::fingerprint: fingerprint error for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/Check { test: true }/TargetInner { name: "rust-app", doc: true, ..: with_path("/Users/ble/ZKMLResearch/proto-neural-zkp/src/cli/main.rs", Edition2021) }
-   3.344400083s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="rust-app"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/neural-zkp-add19785a9a2252f/test-bin-rust-app`
+   3.213252459s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="rust-app"}: cargo::core::compiler::fingerprint: fingerprint error for neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp)/Check { test: true }/TargetInner { name: "rust-app", doc: true, ..: with_path("/Users/ble/ZKMLResearch/proto-neural-zkp/src/cli/main.rs", Edition2021) }
+   3.213255875s  INFO prepare_target{force=false package_id=neural-zkp v0.1.0 (/Users/ble/ZKMLResearch/proto-neural-zkp) target="rust-app"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ble/ZKMLResearch/proto-neural-zkp/target/debug/.fingerprint/neural-zkp-add19785a9a2252f/test-bin-rust-app`
 
 Caused by:
     No such file or directory (os error 2)
